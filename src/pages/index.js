@@ -3,7 +3,7 @@ import {Typography, Card, CardContent, CardMedia, CardHeader, Avatar, IconButton
 import {GitHub, Mail, LinkedIn} from '@mui/icons-material';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import Image from '../images/banner.jpeg';
 const App = () => {
   return (
     <Layout className="content">
@@ -12,7 +12,7 @@ const App = () => {
       <Grid item>
         <Card>
           
-          <CardMedia component="img" height="150" image="https://i.imgur.com/vMpaWhX.jpeg" alt="background"/>
+          <CardMedia component="img" height="150" image={Image} alt="background"/>
           <div className="cardHeader">
             <Avatar alt="avatar" src="https://avatars.githubusercontent.com/u/67706639" sx={{ width: 128, height: 128}}/>
           </div>

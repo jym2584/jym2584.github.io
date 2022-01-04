@@ -1,10 +1,13 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import {Alert, AlertTitle, Typography, Button, Card, CardContent, CardMedia, CardActions, Grid} from '@mui/material';
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-const BlogIndex = ({ data, location }) => {
+import Banner2 from '../images/banner2.jpeg';
+import Banner3 from '../images/banner3.jpeg';
+
+
+const Projects = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -32,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
               <CardMedia
                 component="img"
                 height="200"
-                image="https://i.imgur.com/BabqvuQ.jpeg"
+                image={Banner2}
                 alt="background"
               />
               <CardContent>
@@ -54,7 +57,7 @@ const BlogIndex = ({ data, location }) => {
               <CardMedia
                 component="img"
                 height="200"
-                image="https://i.imgur.com/02t9VNg.jpeg"
+                image={Banner3}
                 alt="background"
               />
               <CardContent>
@@ -78,7 +81,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Projects;
 
 export const pageQuery = graphql`
   query {
