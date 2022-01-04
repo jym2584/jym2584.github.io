@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/first-blog/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Jin Moon"}},"markdownRemark":{"id":"fd339b49-edb6-5d4d-9c00-b89bec71beae","excerpt":"What","html":"<p>What</p>","frontmatter":{"title":"First Blog!","date":"December 30, 2021","description":null}},"previous":null,"next":{"fields":{"slug":"/rit-outlook-setup/"},"frontmatter":{"title":"Setting up RIT gmail with Office Outlook (Version 2005+)"}}},"pageContext":{"id":"fd339b49-edb6-5d4d-9c00-b89bec71beae","previousPostId":null,"nextPostId":"44cc6a1f-3275-5eb0-af45-0e15a71e74af"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}

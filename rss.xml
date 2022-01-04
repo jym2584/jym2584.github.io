@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Gatsby Starter Blog RSS Feed]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jan 2022 01:06:38 GMT</lastBuildDate><item><title><![CDATA[Setting up RIT gmail with Office Outlook (Version 2005+)]]></title><description><![CDATA[Made a small guide for setting up Outlook for Office (or Microsoft 365) a while ago. Might be useful for some people that currently uses the…]]></description><link>null/rit-outlook-setup/</link><guid isPermaLink="false">null/rit-outlook-setup/</guid><pubDate>Thu, 30 Dec 2021 20:03:00 GMT</pubDate><content:encoded>&lt;p&gt;Made a small guide for setting up Outlook for Office (or Microsoft 365) a while ago. Might be useful for some people that currently uses the desktop application for their emails since the rit confluence wiki seems to be outdated and I was having a bit of trouble trying to get some help from ITS&lt;/p&gt;
+&lt;h3&gt;Setting GApps password &amp;#x26; IMAP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href=&quot;https://start.rit.edu&quot;&gt;https://start.rit.edu&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on Google Preferences&lt;/li&gt;
+&lt;li&gt;Set and save google apps password&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go to Gmail
+&lt;ul&gt;
+&lt;li&gt;Go to Quick Settings (cog icon) &gt; See all settings&lt;/li&gt;
+&lt;li&gt;Go to Forwarding and POP/IMAP&lt;/li&gt;
+&lt;li&gt;Enable IMAP and Save Changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Office Outlook&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open Outlook and go to File &gt; Add Account&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Login using your &lt;a href=&quot;mailto:ritusername@rit.edu&quot;&gt;ritusername@rit.edu&lt;/a&gt; (@g.rit.edu domain name is not necessary)&lt;/li&gt;
+&lt;li&gt;Connect and Setup with IMAP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IMAP Account Settings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Incoming mail: imap.gmail.com
+&lt;ul&gt;
+&lt;li&gt;Port: 993&lt;/li&gt;
+&lt;li&gt;Encryption method: SSL/TLS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Outgoing mail: smtp.gmail.com
+&lt;ul&gt;
+&lt;li&gt;Port: 465&lt;/li&gt;
+&lt;li&gt;Encryption method: SSL/TLS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use your google apps password from start.rit.edu&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RIT login will pop up, use regular credentials (may need to log in for the second time)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Allow access from Microsoft apps &amp;#x26; services if prompted&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[First Blog!]]></title><description><![CDATA[What]]></description><link>null/first-blog/</link><guid isPermaLink="false">null/first-blog/</guid><pubDate>Thu, 30 Dec 2021 18:03:00 GMT</pubDate><content:encoded>&lt;p&gt;What&lt;/p&gt;</content:encoded></item></channel></rss>

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-projects-js",
+    "path": "/projects/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Jin Moon"}},"allMarkdownRemark":{"nodes":[{"excerpt":"Made a small guide for setting up Outlook for Office (or Microsoft 365) a while ago. Might be useful for some people that currently uses the…","fields":{"slug":"/rit-outlook-setup/"},"frontmatter":{"date":"December 30, 2021","title":"Setting up RIT gmail with Office Outlook (Version 2005+)","description":null}},{"excerpt":"What","fields":{"slug":"/first-blog/"},"frontmatter":{"date":"December 30, 2021","title":"First Blog!","description":null}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2841359383"]}
