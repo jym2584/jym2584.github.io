@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import {AppBar, Toolbar, Typography, Button, Card, Box, CardContent, Link, Popover, Fade, Paper, CardMedia, CardHeader, Avatar, IconButton, Grid} from '@mui/material';
-import {GitHub, Mail, LinkedIn} from '@mui/icons-material';
+import {Alert, AlertTitle, Typography, Button, Card, CardContent, CardMedia, CardActions, Grid} from '@mui/material';
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 const BlogIndex = ({ data, location }) => {
@@ -10,7 +10,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
 <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title="Projects" />
       <Grid container spacing={2} direction="row">
 
       <Grid item xs={12}>
@@ -21,33 +21,58 @@ const BlogIndex = ({ data, location }) => {
             </Typography>
           </CardContent>
         </Card>
+        <Alert severity="info">
+          <AlertTitle>Work in progress</AlertTitle>
+            Planning to support markdown on this page in the future :)
+        </Alert>
       </Grid>
 
-      {posts.map(post => {
-        const title = post.frontmatter.title || post.fields.slug
-
-        return (
           <Grid item xs={6}>
-            <Link to={post.fields.slug} className="bloglink">
             <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image="https://i.imgur.com/BabqvuQ.jpeg"
+                alt="background"
+              />
               <CardContent>
-              <Typography variant="h5" color="text.secondary">
-                {title}
-              </Typography>
-              
-              <Typography>
-                {post.frontmatter.date}
-              </Typography>
-              <br/>
-              <Typography>
-                {post.frontmatter.description || post.excerpt}
-              </Typography>
+                <Typography gutterBottom variant="h5" component="div">
+                  Example card
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  This is my ideal setup of the page. Cards would dynamically be updated either through some markdown or fetching my repository and popluating the content via the readme file.
+                </Typography>
               </CardContent>
-          </Card>
-          </Link>
+              <CardActions>
+                <Button size="small">View Repository</Button>
+              </CardActions>
+            </Card>
           </Grid>
-        )
-      })}
+
+          <Grid item xs={6}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image="https://i.imgur.com/02t9VNg.jpeg"
+                alt="background"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Anotha one!
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  It would also (ideally) include a short description about the project!
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">View Repository</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+
+
+
       </Grid>
     </Layout>
   )

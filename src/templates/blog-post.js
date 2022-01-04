@@ -4,8 +4,9 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import {Grid, Card, CardContent, Typography, Breadcrumbs} from '@mui/material';
-import { maxWidth } from "@mui/system"
+import {Grid, Card, CardContent, Typography, Breadcrumbs, Tooltip} from '@mui/material';
+import {Button} from "gatsby-theme-material-ui";
+import {NavigateNext, NavigateBefore} from '@mui/icons-material';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -46,8 +47,9 @@ const BlogPostTemplate = ({ data, location }) => {
         </CardContent>
         </Card>
         </Grid>
-        <hr />
-      <nav className="blog-post-nav">
+        
+        <Grid item>
+        <nav className="blog-post-nav">
         <ul
           style={{
             display: `flex`,
@@ -59,25 +61,29 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              <Tooltip title="Older Post" placement="top">
+              <Button variant="outlined" to={previous.fields.slug} rel="prev" startIcon={<NavigateBefore/>}>
+                {previous.frontmatter.title}
+              </Button>
+              </Tooltip>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              <Tooltip title="Newer Post" placement="top">
+              <Button variant="outlined" to={next.fields.slug} rel="next" endIcon={<NavigateNext/>}>
+                {next.frontmatter.title}
+              </Button>
+              </Tooltip>
             )}
           </li>
         </ul>
       </nav>
+        </Grid>
       </Grid>
     </Layout>
   )
 }
-
 export default BlogPostTemplate
 
 export const pageQuery = graphql`

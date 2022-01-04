@@ -1,11 +1,13 @@
 import * as React from "react"
-import { graphql } from "gatsby"
-import {AppBar, Toolbar, Typography, Button, Card, Box, CardContent, Link, Popover, Fade, Paper, CardMedia, CardHeader, Avatar, IconButton, Grid} from '@mui/material';
+import {Typography, Card, CardContent, CardMedia, CardHeader, Avatar, IconButton, Grid} from '@mui/material';
 import {GitHub, Mail, LinkedIn} from '@mui/icons-material';
 import Layout from "../components/layout"
-const BlogIndex = () => {
+import Seo from "../components/seo"
+
+const App = () => {
   return (
     <Layout className="content">
+      <Seo title="Main" />
     <Grid container spacing={2} direction="column">
       <Grid item>
         <Card>
@@ -51,4 +53,4 @@ const BlogIndex = () => {
   )
 }
 
-export default BlogIndex
+export default App;
